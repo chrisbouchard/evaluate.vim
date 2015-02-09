@@ -1,0 +1,60 @@
+*evaluate.txt*
+*evaluate*
+
+
+==============================================================================
+CONTENTS                                                   *evaluate-contents*
+
+    0. Introduction...................................|evaluate-intro|
+    1. Usage..........................................|evaluate-usage|
+    2. Customization..................................|evaluate-customization|
+    3. License........................................|evaluate-license|
+
+
+==============================================================================
+0. Introduction                                               *evaluate-intro*
+
+Evaluate is a plugin for, well, evaluating things.
+
+==============================================================================
+1. Usage                                                      *evaluate-usage*
+
+By default, evaluate is mapped to the key sequence '<leader>e', and by default
+'<leader>' is '\'.
+
+==============================================================================
+2. Customization                                      *evaluate-customization*
+
+The key sequence mapped by evaluate is controlled by 'g:execute_plugin_map'.
+The default is '<leader>e', but a different mapping can be used: >
+    let g:evaluate_plugin_map = "<F5>"
+<
+
+==============================================================================
+3. License                                                  *evaluate-license*
+
+Copyright (c) 2015, Christopher Bouchard
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+  * Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+ vim:tw=78:sw=4:ft=help:norl:
