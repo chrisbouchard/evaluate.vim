@@ -1,4 +1,4 @@
-function! EvaluateOperator(type)
+function! evaluate#EvaluateOperator(type)
     if a:type ==# 'v' || a:type ==# 'V'
         execute "normal! `<v`>"
     elseif a:type ==# 'char' || a:type ==# 'line'
