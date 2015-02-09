@@ -29,7 +29,6 @@ The key sequence mapped by evaluate is controlled by 'g:execute_plugin_map'.
 The default is '<leader>e', but a different mapping can be used: >
     let g:evaluate_plugin_map = "<F5>"
 <
-
 ==============================================================================
 3. License                                                  *evaluate-license*
 
