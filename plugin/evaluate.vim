@@ -25,10 +25,21 @@
 " ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 " POSSIBILITY OF SUCH DAMAGE.
 
+if exists("g:loaded_evaluate")
+    finish
+endif
+
+let g:loaded_evaluate = 1
+
+let s:save_cpo = &cpo
+set cpo&vim
+
 if !exists("g:evaluate_plugin_map")
     let g:evaluate_plugin_map = "<leader>e"
 endif
 
-execute "nnoremap" "<silent>" g:evaluate_plugin_map ":set operatorfunc=evaluate#EvaluateOperator<CR>g@"
-execute "vnoremap" "<silent>" g:evaluate_plugin_map ":<C-u>call evaluate#EvaluateOperator(visualmode())<CR>"
+execute "nnoremap" "<unique>" "<silent>" g:evaluate_plugin_map ":set operatorfunc=evaluate#EvaluateOperator<CR>g@"
+execute "vnoremap" "<unique>" "<silent>" g:evaluate_plugin_map ":<C-u>call evaluate#EvaluateOperator(visualmode())<CR>"
+
+let &cpo = s:save_cpo
 

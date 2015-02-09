@@ -25,6 +25,9 @@
 " ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 " POSSIBILITY OF SUCH DAMAGE.
 
+let s:save_cpo = &cpo
+set cpo&vim
+
 function! evaluate#EvaluateOperator(type)
     if a:type ==# 'v' || a:type ==# 'V'
         execute "normal! `<v`>"
@@ -34,4 +37,6 @@ function! evaluate#EvaluateOperator(type)
 
     execute "normal! c\<C-r>=\<C-r>\"\<CR>\<ESC>"
 endfunction
+
+let &cpo = s:save_cpo
 
